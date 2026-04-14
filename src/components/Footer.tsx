@@ -1,132 +1,94 @@
-import { Facebook, Instagram, Twitter, Youtube } from "lucide-react"
+import Icon from "@/components/ui/icon"
 
 export function Footer() {
   return (
-    <footer id="contact" className="bg-background border-t border-border">
+    <footer id="contact" className="bg-zinc-900 text-white border-t border-zinc-800">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-semibold">Horizon Voyages</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              Создаём незабываемые путешествия по всему миру с 2010 года
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                <Icon name="Bike" size={22} className="text-white" />
+              </div>
+              <div>
+                <div className="text-lg font-bold leading-none">ФМКСК</div>
+                <div className="text-xs text-white/50 leading-none mt-0.5">Краснодарский край</div>
+              </div>
+            </div>
+            <p className="text-sm text-white/60 leading-relaxed">
+              НКО «Краснодарская краевая общественная организация "Федерация мотоциклетного и квадроциклетного спорта"»
             </p>
             <div className="flex gap-4">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Facebook className="h-5 w-5" />
+              <a href="#" className="text-white/50 hover:text-primary transition-colors">
+                <Icon name="Instagram" size={20} />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Instagram className="h-5 w-5" />
+              <a href="#" className="text-white/50 hover:text-primary transition-colors">
+                <Icon name="Youtube" size={20} />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Youtube className="h-5 w-5" />
+              <a href="https://vk.com" className="text-white/50 hover:text-primary transition-colors">
+                <Icon name="MessageSquare" size={20} />
               </a>
             </div>
           </div>
 
-          {/* Destinations */}
+          {/* Disciplines */}
           <div>
-            <h4 className="font-semibold mb-4">Направления</h4>
-            <ul className="space-y-3 text-sm text-muted-foreground">
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Европа
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Азия
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Африка
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Америка
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Океания
-                </a>
-              </li>
+            <h4 className="font-semibold mb-4 text-white">Дисциплины</h4>
+            <ul className="space-y-3 text-sm text-white/60">
+              <li><a href="#" className="hover:text-white transition-colors">Мотокросс</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Квадроциклы (ATV)</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Супермото</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Эндуро</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Суперкросс</a></li>
             </ul>
           </div>
 
-          {/* Company */}
+          {/* Organization */}
           <div>
-            <h4 className="font-semibold mb-4">Компания</h4>
-            <ul className="space-y-3 text-sm text-muted-foreground">
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  О нас
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Вакансии
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Пресса
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Блог
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Партнёры
-                </a>
-              </li>
+            <h4 className="font-semibold mb-4 text-white">Организация</h4>
+            <ul className="space-y-3 text-sm text-white/60">
+              <li><a href="#about" className="hover:text-white transition-colors">О федерации</a></li>
+              <li><a href="#events" className="hover:text-white transition-colors">Соревнования</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Вступить в ФМКСК</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Документы</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Новости</a></li>
             </ul>
           </div>
 
-          {/* Support */}
+          {/* Contacts */}
           <div>
-            <h4 className="font-semibold mb-4">Поддержка</h4>
-            <ul className="space-y-3 text-sm text-muted-foreground">
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Центр помощи
-                </a>
+            <h4 className="font-semibold mb-4 text-white">Контакты</h4>
+            <ul className="space-y-3 text-sm text-white/60">
+              <li className="flex items-start gap-2">
+                <Icon name="MapPin" size={14} className="text-primary mt-0.5 shrink-0" />
+                <span>353460, Краснодарский Край, г. Геленджик, ул. Тельмана, д. 146, пом. 3</span>
               </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Связаться с нами
-                </a>
+              <li className="flex items-center gap-2">
+                <Icon name="Phone" size={14} className="text-primary shrink-0" />
+                <a href="tel:+79384444529" className="hover:text-white transition-colors">8-938-4444-529</a>
               </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Политика конфиденциальности
-                </a>
+              <li className="flex items-center gap-2">
+                <Icon name="Mail" size={14} className="text-primary shrink-0" />
+                <a href="mailto:accounting-dep@groupgrand.ru" className="hover:text-white transition-colors text-xs">accounting-dep@groupgrand.ru</a>
               </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Условия использования
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Правила отмены
-                </a>
+              <li className="flex items-start gap-2">
+                <Icon name="User" size={14} className="text-primary mt-0.5 shrink-0" />
+                <span>Президент: Петросян Альберт Тигранович</span>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>2025 Horizon Voyages. Все права защищены.</p>
+        {/* Requisites */}
+        <div className="pt-8 border-t border-zinc-800 grid md:grid-cols-2 gap-4 text-xs text-white/40">
+          <div className="space-y-1">
+            <div>ИНН: 2304081083 · КПП: 230401001 · ОГРН: 1232300040950 от 14.07.2023</div>
+            <div>Юридический адрес: 353460, Краснодарский Край, г. Геленджик, ул. Тельмана, д. 146, пом. 3</div>
+          </div>
+          <div className="md:text-right">
+            <div>© 2025 НКО «ФМКСК». Все права защищены.</div>
+          </div>
         </div>
       </div>
     </footer>

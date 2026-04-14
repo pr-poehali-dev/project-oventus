@@ -2,7 +2,7 @@ import type React from "react"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Send } from "lucide-react"
+import Icon from "@/components/ui/icon"
 
 export function Newsletter() {
   const [email, setEmail] = useState("")
@@ -14,15 +14,15 @@ export function Newsletter() {
   }
 
   return (
-    <section className="py-32 bg-muted/30">
+    <section className="py-32 bg-primary text-white">
       <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
         <div className="space-y-8">
           <div className="space-y-4">
-            <h2 className="text-4xl md:text-5xl font-light tracking-tight text-balance">
-              Будьте <span className="font-semibold">в курсе</span>
+            <h2 className="text-4xl md:text-5xl font-light tracking-tight text-balance text-white">
+              Будьте <span className="font-semibold">в курсе событий</span>
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-balance leading-relaxed">
-              Подпишитесь на рассылку и получайте эксклюзивные предложения, гиды по направлениям и советы от экспертов
+            <p className="text-lg text-white/80 max-w-2xl mx-auto text-balance leading-relaxed">
+              Подпишитесь на новости ФМКСК — анонсы соревнований, результаты чемпионатов и актуальная информация для спортсменов
             </p>
           </div>
 
@@ -34,20 +34,20 @@ export function Newsletter() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="h-12 rounded-full border-2 px-6"
+                className="h-12 rounded-full border-2 border-white/30 bg-white/10 text-white placeholder:text-white/50 px-6 focus:border-white"
               />
               <Button
                 type="submit"
                 size="lg"
-                className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6 shrink-0"
+                className="bg-white text-primary hover:bg-white/90 rounded-full px-6 shrink-0 font-semibold"
               >
-                <Send className="h-5 w-5" />
+                <Icon name="Send" size={20} />
               </Button>
             </div>
           </form>
 
-          <p className="text-xs text-muted-foreground">
-            Подписываясь, вы соглашаетесь с Политикой конфиденциальности и даёте согласие на получение рассылки
+          <p className="text-xs text-white/60">
+            Подписываясь, вы соглашаетесь с Политикой конфиденциальности ФМКСК
           </p>
         </div>
       </div>
