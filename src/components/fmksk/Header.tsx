@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Icon from "@/components/ui/icon";
 
 const navItems = [
-  { label: "О федерации", href: "#about" },
+  { label: "Об организации", href: "#about" },
   { label: "Дисциплины", href: "#disciplines" },
   { label: "Календарный план", href: "#calendar" },
   { label: "Проекты", href: "#projects" },

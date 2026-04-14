@@ -1,5 +1,5 @@
 const navCol1 = [
-  { label: "О федерации", href: "#about" },
+  { label: "Об организации", href: "#about" },
   { label: "Дисциплины", href: "#disciplines" },
   { label: "Календарный план", href: "#calendar" },
   { label: "Проекты", href: "#projects" },

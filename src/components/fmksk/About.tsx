@@ -41,7 +41,7 @@ export default function About() {
           </span>
         </div>
         <h2 className="text-3xl md:text-5xl font-black uppercase text-white mb-12">
-          О ФЕДЕРАЦИИ
+          ОБ ОРГАНИЗАЦИИ
         </h2>
 
         <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
@@ -55,7 +55,7 @@ export default function About() {
               <p>
                 Организация объединяет спортсменов, тренеров, организаторов соревнований,
                 спортивные сообщества, партнеров и представителей профильной инфраструктуры.
-                Федерация содействует развитию официальных дисциплин, календарных мероприятий,
+                Организация содействует развитию официальных дисциплин, календарных мероприятий,
                 детско-юношеского спорта, культуры безопасности и взаимодействию с органами власти.
               </p>
               <p>
@@ -87,7 +87,7 @@ export default function About() {
             <div className="flex items-center gap-2 mb-4">
               <div className="w-1 h-6 bg-red-500" />
               <h3 className="text-white font-black uppercase text-sm tracking-widest">
-                Миссия федерации
+                Миссия организации
               </h3>
             </div>
             <p className="text-white/70 text-sm leading-relaxed mb-6">

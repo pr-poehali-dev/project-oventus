@@ -53,10 +53,10 @@ export default function Projects() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
           <h2 className="text-3xl md:text-5xl font-black uppercase text-white">
             ПРОЕКТЫ
-            <br />ФЕДЕРАЦИИ
+            <br />ОРГАНИЗАЦИИ
           </h2>
           <p className="text-white/55 text-sm max-w-md leading-relaxed">
-            Федерация участвует в развитии спортивных и организационных проектов, направленных
+            Организация участвует в развитии спортивных и организационных проектов, направленных
             на формирование современной среды для мотоциклетного и квадроциклетного спорта
             в Краснодарском крае.
           </p>
